@@ -1,0 +1,11 @@
+
+main {
+    padding: 1rem;
+    border: 10px greenyellow solid;
+    margin: 5rem; 
+    border-radius: 2rem;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
