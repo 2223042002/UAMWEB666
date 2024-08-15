@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+h1{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+}
+header{background-color: forestgreen;}
+main{background-color: rgb(166, 45, 45);}
+aside{background-color: rgb(226, 132, 17);}
+footer{background-color: chartreuse;}
+/* DISEÑO RESPONSIVO CON MEDIA QUERIES MOVIL*/
+
+@media (max-width: 600px) {
+       body {
+      background:gray;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;}
+
+}
+
+    
+
+    /* DISEÑO RESPONSIVO CON MEDIA QUERIES TABLET PARA ARRIBA*/
+    @media (min-width: 600px) {
+       /*body {
+          background:gray;
+        } */
+        #container {
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 1rem;
+            grid-template-areas: 
+            "cabeza cabeza cabeza"
+            "principal principal lado"
+            "pie pie pie"
+            ;
+         }
+         header {grid-area: cabeza;}
+         main {grid-area: principal;}
+         aside{grid-area: lado;}
+         footer{grid-area: pie;}
+
+    }
+ 
