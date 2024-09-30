@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap');
+
+
+
+
+ h1{.fruktur-regular 
+    font-family: "Fruktur", system-ui;
+    font-weight: 400;
+    font-style: normal;}
+  
+  
+  .fruktur-regular-italic {
+    font-family: "Fruktur", system-ui;
+    font-weight: 400;
+    font-style: italic;}
+  
+  body{
+        width: 1200 px;
+        background-color: rgb(0, 0, 0);
+        padding:beige
+    }
+/*espacio*/ 
+    nav { background-color: rgb(0, 0, 0);
+    padding:beige}
+{color: yellow;}
+/* hs*/
+
+h1{color: rgb(173, 1, 1);}
+h2{color: rgb(4, 109, 109);}
+{theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);}
